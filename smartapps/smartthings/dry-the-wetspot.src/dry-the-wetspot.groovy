@@ -50,7 +50,7 @@ def waterHandler(evt) {
 	if (evt.value == "wet") {
 		pump.on()
 	} else if (evt.value == "dry") {
-		pump.off()
+		pump.off([delay: 10000])
 	}
 }
 
